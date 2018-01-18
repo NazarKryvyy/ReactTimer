@@ -4,10 +4,10 @@ module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
     'script!foundation-sites/dist/foundation.min.js',
-    './app/app.jsx',
+    './app/app.jsx'
   ],
   externals: {
-    jquery: "jQuery"
+    jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -23,13 +23,13 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
+      applicationStyles: 'app/styles/app.scss',
+      Navigation: 'app/components/Navigation.jsx',
       Timer: 'app/components/Timer.jsx',
       Countdown: 'app/components/Countdown.jsx',
       Clock: 'app/components/Clock.jsx',
       CountdownForm: 'app/components/CountdownForm.jsx',
-      Controls: 'app/components/Controls.jsx',
-      applicationStyles: 'app/styles/app.scss'
+      Controls: 'app/components/Controls.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
